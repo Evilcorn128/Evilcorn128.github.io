@@ -6,25 +6,44 @@
  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
  <link rel="manifest" href="/site.webmanifest">
    <style>
-    .button {
-     background-color: #1247B5;
-     outline: 2px solid #1b0008;
-     color: #eb353f;
-    }
+  .accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+	   
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
    </style>
 </head>
 
 <body>
-  <button type="button" name="MainButton">
-	 Cookie Clicker
- </button>
-  <button type="button" name="MainButton">
-	 Bitburner
- </button>
-  <button type="button" name="MainButton">
-	  Coming Soon
-  </button>
-  <button type="button" name="MainButton">
-	  Coming Soon
-  </button>
+  <button class="accordion">Minecraft</button>
+<div class="panel">
+  <p></p>
+</div>
+
+<button class="accordion">Bitburner</button>
+<div class="panel">
+  <p></p>
+</div>
+
+<button class="accordion">Cookie Clicker</button>
+<div class="panel">
+  <p></p>
+</div>
 </body>
